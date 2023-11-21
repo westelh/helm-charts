@@ -2,6 +2,12 @@ apiVersion: certmanager.step.sm/v1beta1
 kind: StepIssuer
 metadata:
   name: step-issuer
+  labels:
+    app.kubernetes.io/name: step-integration
+    helm.sh/chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/version: {{ .Chart.AppVersion }}    
+    app.kubernetes.io/component: cert-manager
 spec:
   # The CA URL:
   url: {{ .Values.step.authority.url }}
