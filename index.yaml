@@ -1,5 +1,14 @@
 apiVersion: v1
 entries:
+  lencr:
+  - apiVersion: v2
+    created: "2023-11-21T15:21:30.420988131Z"
+    description: A Helm chart for letsencrypt
+    digest: 767e2311b3e4eafa2a78d8220186e910b5e4b0de8e7e52bc20bd7c004b637e59
+    name: lencr
+    urls:
+    - https://github.com/westelh/helm-charts/releases/download/lencr-0.0.0/lencr-0.0.0.tgz
+    version: 0.0.0
   step-integration:
   - apiVersion: v2
     appVersion: 0.8.0
@@ -26,4 +35,4 @@ entries:
     urls:
     - https://github.com/westelh/helm-charts/releases/download/step-integration-1.0.2/step-integration-1.0.2.tgz
     version: 1.0.2
-generated: "2023-11-21T09:29:08.113561761Z"
+generated: "2023-11-21T15:21:30.420997439Z"
