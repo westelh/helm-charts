@@ -1,0 +1,16 @@
+# This application use HCP Vault Secret as secret store
+# and read credentials such as username and password
+# for connecting to the Step Certificate Authority
+hcp:
+  organizationId: my-organization-id
+  projectId: my-project-id
+  principal:
+    secretRef: "secret-name"
+
+step:
+  authority:
+    url: https://xxx.ca.smallstep.com
+    caBundle: null
+    provisioner:
+      name: ""
+      kid: null

@@ -1,0 +1,9 @@
+apiVersion: secrets.hashicorp.com/v1beta1
+kind: HCPAuth
+metadata:
+  name: hcp-auth
+spec:
+  organizationID: {{ .Values.hcp.organizationId }}
+  projectID: {{ .Values.hcp.projectId }} 
+  servicePrincipal:
+    secretRef: {{ .Values.hcp.principal.secretRef }}

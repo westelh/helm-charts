@@ -1,0 +1,8 @@
+apiVersion: v2
+name: step-integration
+version: 1.0.0
+description: A Helm chart for the Step Issuer
+dependencies:
+- name: step-issuer
+  version: 0.8.0
+  repository: https://smallstep.github.io/helm-charts
