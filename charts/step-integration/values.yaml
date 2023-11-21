@@ -6,6 +6,7 @@ hcp:
   projectId: my-project-id
   principal:
     secretRef: "secret-name"
+  refreshAfter: 1h
 
 step:
   authority:
