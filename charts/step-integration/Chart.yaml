@@ -1,6 +1,7 @@
 apiVersion: v2
 name: step-integration
 version: 1.0.2
+appVersion: 0.8.0
 description: A Helm chart for the Step Issuer
 dependencies:
 - name: step-issuer
