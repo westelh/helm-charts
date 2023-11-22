@@ -1,10 +1,9 @@
 vault:
   server:
     address: http://vault.default.svc.cluster.local:8200
-  
+
   # The following values by key 'auth' must be applicable to the spec field of the VaultAuth CR
-  # auth:
-  #   kubernetes:
-  #     role: exmaple-role
-  #     serviceAccount: example-sa
-  auth: {}
+  auth:
+    kubernetes:
+      role: vault-auth
+      serviceAccount: vault-auth

@@ -8,4 +8,4 @@ metadata:
 spec:
   vaultConnectionRef: {{ .Release.Namespace }}/vault-connection
   auth:
-  {{- toYaml .Values.vault.auth | nindent 4 }}
+    {{- toYaml .Values.vault.auth | nindent 4 }}
