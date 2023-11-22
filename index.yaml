@@ -79,6 +79,14 @@ entries:
     version: 1.0.2
   vault-issuer:
   - apiVersion: v2
+    created: "2023-11-22T04:50:34.465362251Z"
+    description: A Helm chart for the vault issuer
+    digest: 657bd5fbace71537022de1bb13c7a73317232dacd8b45346f4bacbb244238f15
+    name: vault-issuer
+    urls:
+    - https://github.com/westelh/helm-charts/releases/download/vault-issuer-0.0.2/vault-issuer-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
     created: "2023-11-22T04:04:57.249574236Z"
     description: A Helm chart for the vault issuer
     digest: 7f0e0de2ef062a4b5078a1bcd6224bdc99a60c9aac084cc711897b33e6bffb0e
@@ -88,6 +96,14 @@ entries:
     version: 0.0.1
   vault-trust:
   - apiVersion: v2
+    created: "2023-11-22T04:50:34.649451929Z"
+    description: A Helm chart for the vault trust bundle
+    digest: a018045534c77d606f118073d8c165324705dd74f6b325730b317e42c3bc0c61
+    name: vault-trust
+    urls:
+    - https://github.com/westelh/helm-charts/releases/download/vault-trust-0.0.2/vault-trust-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
     created: "2023-11-22T04:04:57.450874516Z"
     description: A Helm chart for the vault trust bundle
     digest: 146769f4047f08771fc7631dfcc4b91c5f52ca066933a6947267542e22f5eb70
@@ -95,4 +111,4 @@ entries:
     urls:
     - https://github.com/westelh/helm-charts/releases/download/vault-trust-0.0.1/vault-trust-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-22T04:04:57.450913468Z"
+generated: "2023-11-22T04:50:34.649485532Z"
