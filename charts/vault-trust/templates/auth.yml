@@ -1,0 +1,10 @@
+apiVersion: secrets.hashicorp.com/v1beta1
+kind: VaultAuth
+metadata:
+  name: vault-auth
+  namespace: cert-manager
+  labels:
+    {{- include "vaultIntegration.trust.metaLabels" . | nindent 4 }}
+spec:
+  vaultConnectionRef: {{ .Release.Namespace }}/vault-connection
+  {{- toYaml .Values.vault.auth | nindent 2 }}

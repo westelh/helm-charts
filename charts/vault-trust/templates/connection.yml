@@ -1,0 +1,9 @@
+apiVersion: secrets.hashicorp.com/v1beta1
+kind: VaultConnection
+metadata:
+  name: vault-connection
+  namespace: cert-manager
+  labels:
+    {{- include "vaultIntegration.trust.metaLabels" . | nindent 4 }}
+spec:
+  address: {{ .Values.vault.server.address }}
