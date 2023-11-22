@@ -1,0 +1,15 @@
+vault:
+  connection:
+    address: http://vault.default.svc.cluster.local:8200
+    
+  # Configure auth method here. Detailed instructions can be found using `kubectl explain issuer.spec.vault.auth`
+  # auth:
+  #   kubernetes:
+  #   appRole:
+  # . tokenSecretRef:
+  auth: {}
+
+  # Configure Vault PKI backend here.
+  pki:
+    path: pki
+    role: example-dot-com

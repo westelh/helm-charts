@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: vault-issuer
+  labels:
+    {{- include "vaultIntegration.common.metaLabels" . | nindent 4 }}
+spec:
+  vault:
+    path: {{ .Values.vault.pki.path }}/sign/{{ .Values.vault.pki.role }}
+    server: {{ .Values.vault.connection.address }}
+    auth:
+      {{- toYaml .Values.vault.auth | nindent 6}}
