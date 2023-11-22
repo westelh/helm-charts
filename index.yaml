@@ -96,6 +96,14 @@ entries:
     version: 0.0.1
   vault-trust:
   - apiVersion: v2
+    created: "2023-11-22T05:22:26.519590705Z"
+    description: A Helm chart for the vault trust bundle
+    digest: d898a11fbf95de7a7ee4bfe0ca73840a6dafbc10f3131ff8bc5f6a1db1f5d61d
+    name: vault-trust
+    urls:
+    - https://github.com/westelh/helm-charts/releases/download/vault-trust-0.0.6/vault-trust-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
     created: "2023-11-22T05:15:04.85516Z"
     description: A Helm chart for the vault trust bundle
     digest: 57e70d384369bfa6257e5fec296b0747696ff4057a698baa35c3dc5c1f7bd68a
@@ -135,4 +143,4 @@ entries:
     urls:
     - https://github.com/westelh/helm-charts/releases/download/vault-trust-0.0.1/vault-trust-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-22T05:15:04.855196498Z"
+generated: "2023-11-22T05:22:26.519632853Z"
