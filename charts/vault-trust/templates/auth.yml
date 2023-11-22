@@ -7,5 +7,5 @@ metadata:
     {{- include "vaultTrust.trust.metaLabels" . | nindent 4 }}
 spec:
   vaultConnectionRef: {{ .Release.Namespace }}/vault-connection
-  auth:
-    {{- toYaml .Values.vault.auth | nindent 4 }}
+  method: {{ .Values.vault.authMethod }}
+  {{- toYaml .Values.vault.auth | nindent 2 }}
