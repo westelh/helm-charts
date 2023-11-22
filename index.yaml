@@ -28,6 +28,19 @@ entries:
   step-integration:
   - apiVersion: v2
     appVersion: 0.8.0
+    created: "2023-11-22T01:00:34.365391476Z"
+    dependencies:
+    - name: step-issuer
+      repository: https://smallstep.github.io/helm-charts
+      version: 0.8.0
+    description: A Helm chart for the Step Issuer
+    digest: 5522c255793e830b2d25ac3b3d56db5c23e444d87334958466e891d43327d4cd
+    name: step-integration
+    urls:
+    - https://github.com/westelh/helm-charts/releases/download/step-integration-1.0.5/step-integration-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 0.8.0
     created: "2023-11-22T00:54:58.273633354Z"
     dependencies:
     - name: step-issuer
@@ -64,4 +77,4 @@ entries:
     urls:
     - https://github.com/westelh/helm-charts/releases/download/step-integration-1.0.2/step-integration-1.0.2.tgz
     version: 1.0.2
-generated: "2023-11-22T00:54:58.273649905Z"
+generated: "2023-11-22T01:00:34.36541525Z"
