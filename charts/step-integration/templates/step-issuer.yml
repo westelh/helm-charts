@@ -19,4 +19,6 @@ spec:
     kid: {{ .Values.step.authority.provisioner.kid }}
     passwordRef:
       name: step-issuer-secret
+      namespace: {{ .Release.Namespace }}
       key: password
+
