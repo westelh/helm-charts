@@ -3,7 +3,7 @@ kind: Role
 metadata:
   name: vault-issuer
   labels:
-    {{- include "vaultIntegration.common.metaLabels" . | nindent 4 }}
+    {{- include "vaultIssuer.common.metaLabels" . | nindent 4 }}
 rules:
   - apiGroups: ['']
     resources: ['serviceaccounts/token']

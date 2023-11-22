@@ -3,7 +3,7 @@ kind: Issuer
 metadata:
   name: vault-issuer
   labels:
-    {{- include "vaultIntegration.common.metaLabels" . | nindent 4 }}
+    {{- include "vaultIssuer.common.metaLabels" . | nindent 4 }}
 spec:
   vault:
     path: {{ .Values.vault.pki.path }}/sign/{{ .Values.vault.pki.role }}
