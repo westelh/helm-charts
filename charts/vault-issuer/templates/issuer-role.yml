@@ -15,6 +15,7 @@ kind: RoleBinding
 metadata:
   name: vault-issuer
   labels:
+    {{- include "vaultIssuer.common.metaLabels" . | nindent 4 }}
     app.kubernetes.io/component: cert-manager
 subjects:
   - kind: ServiceAccount

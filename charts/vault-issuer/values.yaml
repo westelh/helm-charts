@@ -7,7 +7,12 @@ vault:
   #   kubernetes:
   #   appRole:
   # . tokenSecretRef:
-  auth: {}
+  auth:
+    kubernetes:
+      mountPath: /v1/auth/kubernetes
+      role: vault-issuer
+      serviceAccountRef:
+        name: vault-issuer
 
   # Configure Vault PKI backend here.
   pki:
